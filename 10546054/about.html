@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <title>ntub|關於</title>
+    <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        line-height: 1.5;
+        font: 15px/1.5 Arial,Helvetica, sans-serif;
+        padding: 0;
+        margin: 0;
+        background-color: #f4f4f4;
+    }
+   
+    /*globle*/
+    .container{
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+    .button_1{
+        height: 38px;
+        background: #e8491d;
+        border:0;
+        padding-left: 20px;
+        padding-right: 20px;
+        color:#ffffff;
+    }
+    .dark{
+        padding:15px;
+        background:#35424a;
+        color: #ffffff;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    /* header*/
+    header{
+        background: #35424a;
+        color: #ffffff;
+        padding-top: 30px;
+        min-height: 70px;
+        border-bottom: #e8491d solid;
+    }
+    header a{
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+
+    }
+
+    
+    header li{
+        float: none;
+        display: inline;
+        padding: 0 20px 0 20px;
+
+    }
+    header#branding{
+        float: left;
+    }
+    header#branding h1{
+        margin: 0;
+    }
+    header nav{
+        float: right;
+        margin-top: 5px;
+    }
+
+    header a :hover{
+        color:#cccccc;
+        font-weight: bold;
+    }
+    /*showcase*/
+    section#showcase{
+        min-height: 400px;
+        background:url('gg.jpg')no-repeat;
+        text-align: center;
+        color:#ffffff;
+
+    }
+    section#showcase h1{
+        margin-top: 100px;
+        font-size: 55px;
+        margin-bottom: 10px;
+
+    }
+    section#showcase p{
+        font-size: 20px;
+
+    }
+    section#newsletter{
+        padding: 15px;
+        color:#ffffff;
+        background:#35424a; 
+    }
+    section#newsletter h1{
+        float: left;
+    }
+    section#newsletter form{
+        float: right;
+        margin: 15px;
+    }
+    section#newsletter input[type="email"]{
+        padding: 4px ;
+        height: 25px;
+        width: 200px;
+    }
+    /*boxes*/
+    section#boxes{
+        margin-top: 20px;
+    }
+    section#boxes.box{
+        float:left;
+        width: 30px;
+        padding: 30%;
+        text-align: center;
+    }
+    /*sidebar*/
+    aside#sidebar{
+        float: right;
+        width: 30%;
+        margin-top: 10px;
+
+    }
+    article#main-col{
+        float: left;
+        width: 65%;
+    }
+    footer{
+        padding: 20px;
+        margin: 20px;
+        background-color: #ffffff;
+        text-align: center;
+
+    }
+
+
+    </style>
+    
+</head>
+<body>
+ <header>
+     <div class="container">
+         <div id="branding">
+            <h1>國立臺北商業大學</h1>
+        </div>
+        <nav>
+         <ul>
+          <li><a href="home.html">首頁</a></li>
+          <li class="current"><a href="about.html">關於</a></li>
+          <li><a href="comment.html">留言板</a></li>
+         </ul>
+        </nav>
+    </div>
+</header>
+
+
+<section id="showcase">
+    <div class="container">
+        <h1>國立臺北商業大學歡迎您蒞臨參觀</h1>
+        <p>台北市長選舉電視辯論會今(10)日下午1點登場，依序由五位候選人李錫錕、柯文哲、姚文智、丁守中、吳萼洋依序申論。</p>
+    </div>
+</section>
+<section id="newsletter">
+    <div class="container">
+        <h1>追蹤我們的最新消息</h1>
+        <form>
+            <input type="email" placeholder="Enter Email...">
+            <button type="submit" class="button_1">訂閱</button>
+        </form>
+    </div>
+</section>
+
+<section id="main">
+    <div class="container">
+    <article id="main-col">
+        <h1 class="page title">關於北商</h1>
+        <p>
+            國民黨高雄市長候選人韓國瑜深夜在網路直播中說，他有確切的情報顯示有一批「假韓粉」表面上是支持他，實際上是在影響他的名聲，這些人會用粗暴的用語批評他人，是披著羊皮的狼，請大家分清「真韓粉」或「假韓粉」。
+        </p>
+        <p class="dark">
+            韓國瑜批民進黨的「民主聖地」說，認為民進黨說高雄是民主聖地，所以民進黨在高雄市長選舉中不能輸，但如照民進黨說法，全台縣市都是民主聖地，民進黨都不能輸，民進黨執政都不要做事，選舉時強調是民主聖地就可以了。
+        </p>
+    </article>
+
+    <aside id="sidebar">
+        <div class="dark">
+        <h3>榮譽榜</h3>
+        <p>
+            在「假韓粉」的部分，他說這些「假韓粉」披著韓粉的外套，專門在網路上進行攻擊批判，然後大家就說韓粉不理性。所以他要拜託所有在網路上支持他的好朋友，要分清楚是真韓粉或假韓粉，他獲得的這個情報是確切的，有人披著羊皮的狼，用「韓國瑜粉絲」之名不停的攻擊，而且遣詞用字非常粗暴，就是要讓大家對韓國瑜失去信心，「假韓粉」也是選舉的奧步，而且是新型態的變型，也是一種抹黑，非常可怕，他們躲在小角落裡，用鍵盤讓他的名聲一而再、再而三受到影響。
+        </p>
+    </div>
+    </aside>
+    </div>
+</section>
+
+<footer>
+    <p>Terry Design &copy; 2018</p>
+</footer>
+
+    
+</body>
+</html>

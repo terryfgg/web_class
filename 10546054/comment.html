@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <title>ntub|留言板</title>
+    <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        line-height: 1.5;
+        font: 15px/1.5 Arial,Helvetica, sans-serif;
+        padding: 0;
+        margin: 0;
+        background-color: #f4f4f4;
+    }
+   
+    /*globle*/
+    .container{
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+    .button_1{
+        height: 38px;
+        background: #e8491d;
+        border:0;
+        padding-left: 20px;
+        padding-right: 20px;
+        color:#ffffff;
+    }
+    .dark{
+        padding:15px;
+        background:#35424a;
+        color: #ffffff;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    /* header*/
+    header{
+        background: #35424a;
+        color: #ffffff;
+        padding-top: 30px;
+        min-height: 70px;
+        border-bottom: #e8491d solid;
+    }
+    header a{
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+
+    }
+
+    
+    header li{
+        float: none;
+        display: inline;
+        padding: 0 20px 0 20px;
+
+    }
+    header#branding{
+        float: left;
+    }
+    header#branding h1{
+        margin: 0;
+    }
+    header nav{
+        float: right;
+        margin-top: 5px;
+    }
+
+    header a :hover{
+        color:#cccccc;
+        font-weight: bold;
+    }
+    /*showcase*/
+    section#showcase{
+        min-height: 400px;
+        background:url('gg.jpg')no-repeat;
+        text-align: center;
+        color:#ffffff;
+
+    }
+    section#showcase h1{
+        margin-top: 100px;
+        font-size: 55px;
+        margin-bottom: 10px;
+
+    }
+    section#showcase p{
+        font-size: 20px;
+
+    }
+    section#newsletter{
+        padding: 15px;
+        color:#ffffff;
+        background:#35424a; 
+    }
+    section#newsletter h1{
+        float: left;
+    }
+    section#newsletter form{
+        float: right;
+        margin: 15px;
+    }
+    section#newsletter input[type="email"]{
+        padding: 4px ;
+        height: 25px;
+        width: 200px;
+    }
+    /*boxes*/
+    section#boxes{
+        margin-top: 20px;
+    }
+    section#boxes.box{
+        float:left;
+        width: 30px;
+        padding: 30%;
+        text-align: center;
+    }
+    /*sidebar*/
+    aside#sidebar{
+        float: right;
+        width: 30%;
+        margin-top: 10px;
+
+    }
+     aside#sidebar .留言板 input, aside#sidebar .留言板 text{
+         width:90%;
+         padding:5px;
+     }
+    article#main-col{
+        float: left;
+        width: 65%;
+    }
+    /*services*/
+    ul#comment li{
+        list-style: none;
+        padding:20px;
+        border:#cccccc solid 1 px;
+        margin-bottom:5px;
+        background:#e6e6e6;
+
+
+    }
+    footer{
+        padding: 20px;
+        margin: 20px;
+        background-color: #ffffff;
+        text-align: center;
+    }
+
+    /* media Queries*/
+    @media(max-width:768px){
+        header #branding,
+        header nav,
+        header nav li
+        #newsletter h1 ,
+        #newsletter form,
+        #boxes .box,
+        article#main-col
+        aside#sidebar{
+            float:none;
+            text-align:center;
+            width:100%;
+        }
+        header{
+            padding-bottom:20px;
+        }
+        #showcase h1 {
+            margin-top:40px;
+        }
+
+        #newsletter button , .quote button{
+            display:block;
+            width:100%;
+        }
+        #newsletter form input[type="email"]{
+            width:100%;
+            margin-bottom:5px;
+        }
+
+    }
+
+    </style>
+    
+</head>
+<body>
+ <header>
+     <div class="container">
+         <div id="branding">
+            <h1>國立臺北商業大學</h1>
+        </div>
+        <nav>
+         <ul>
+          <li><a href="home.html">首頁</a></li>
+          <li><a href="about.html">關於</a></li>
+          <li class="current"><a href="comment.html">留言板</a></li>
+         </ul>
+        </nav>
+    </div>
+</header>
+
+
+<section id="showcase">
+    <div class="container">
+        <h1>國立臺北商業大學歡迎您蒞臨參觀</h1>
+        <p>台北市長選舉電視辯論會今(10)日下午1點登場，依序由五位候選人李錫錕、柯文哲、姚文智、丁守中、吳萼洋依序申論。</p>
+    </div>
+</section>
+<section id="newsletter">
+    <div class="container">
+        <h1>追蹤我們的最新消息</h1>
+        <form>
+            <input type="email" placeholder="Enter Email...">
+            <button type="submit" class="button_1">訂閱</button>
+        </form>
+    </div>
+</section>
+
+<section id="main">
+    <div class="container">
+    <article id="main-col">
+    <h1 class="page title">留言板</h1>
+       <ul id="comment">
+       <li>
+       <h3>熱門留言</h3>
+       <p>蔡英文呼籲「我們要用選票，讓依賴網軍、依賴抹黑、依賴造假的政黨輸，讓他們知道奧步沒有用。我們不能只是憤慨，而是要站出來投票！這是一場台灣民主保衛戰，我們要用選票守護民主、守護台灣！」</p>
+       <p>年底九合一大選進入倒數，總統蔡英文加緊腳步要替自家候選人輔選，要從選民手中爭取到更多的選票。昨（ 14 ）日晚間蔡英文在臉書上發文，表示全台選情都很詭譎，每個選區都沒有樂觀的理由，因為有一股力量正在用「兩種奧步」打壓台灣的民主，第一種是「假消息」，第二種則是「網路霸凌」，她更呼籲選民，要用選票讓使用奧步的政黨知道，奧步沒有用。</p>
+       <p>時間 : 2018/11/15 </p>
+       </li>
+       <li>
+        <h3>超夯話題</h3>
+       <p>蔡英文呼籲「我們要用選票，讓依賴網軍、依賴抹黑、依賴造假的政黨輸，讓他們知道奧步沒有用。我們不能只是憤慨，而是要站出來投票！這是一場台灣民主保衛戰，我們要用選票守護民主、守護台灣！」</p>
+       <p>年底九合一大選進入倒數，總統蔡英文加緊腳步要替自家候選人輔選，要從選民手中爭取到更多的選票。昨（ 14 ）日晚間蔡英文在臉書上發文，表示全台選情都很詭譎，每個選區都沒有樂觀的理由，因為有一股力量正在用「兩種奧步」打壓台灣的民主，第一種是「假消息」，第二種則是「網路霸凌」，她更呼籲選民，要用選票讓使用奧步的政黨知道，奧步沒有用。</p>
+       <p>時間 : 2018/11/15</p>
+       </li>
+       <li>
+        <h3>與我們聯繫</h3>
+       <p>蔡英文呼籲「我們要用選票，讓依賴網軍、依賴抹黑、依賴造假的政黨輸，讓他們知道奧步沒有用。我們不能只是憤慨，而是要站出來投票！這是一場台灣民主保衛戰，我們要用選票守護民主、守護台灣！」</p>
+       <p>年底九合一大選進入倒數，總統蔡英文加緊腳步要替自家候選人輔選，要從選民手中爭取到更多的選票。昨（ 14 ）日晚間蔡英文在臉書上發文，表示全台選情都很詭譎，每個選區都沒有樂觀的理由，因為有一股力量正在用「兩種奧步」打壓台灣的民主，第一種是「假消息」，第二種則是「網路霸凌」，她更呼籲選民，要用選票讓使用奧步的政黨知道，奧步沒有用。</p>
+       <p>時間 : 2018/11/15</p>
+       </li>
+       </ul>
+
+    </article>
+    
+    <aside id="sidebar">
+        <div class="dark">
+        <h3>留言板</h3>
+        <form class="quote">
+         <div>
+          <label>姓名</label><br>
+         <input type="text"placeholder="name">
+         </div>
+         <div>
+         <label>E-mail</label><br>
+         <input type="email"placeholder="Email Address">
+        </div>
+         <div>
+        <label>訊息</label><br>
+        <textarea placeholder="message"></textarea>
+        </div>
+        <button class="button_1"type="submit">傳送</button>
+      </form>
+    </div>
+    </aside>
+    </div>
+</section>
+
+<footer>
+    <p>Terry Design &copy; 2018</p>
+</footer>
+
+    
+</body>
+</html>
